@@ -42,7 +42,7 @@ import styles from "./WebhooksPage.module.css";
  * the other's process.
  */
 
-/** The recipe the README documents, shown where a merchant is actually wiring this up. */
+/** The recipe docs/webhooks.md documents, shown where a merchant is actually wiring this up. */
 const VERIFY_SNIPPET = `const [t, v1] = req.get("beluga-signature").split(",");
 const expected = crypto
   .createHmac("sha256", process.env.BELUGA_WEBHOOK_SECRET)

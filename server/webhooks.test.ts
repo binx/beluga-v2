@@ -134,8 +134,9 @@ describe("signing", () => {
     expect(header).toMatch(/^t=1700000000,v1=[0-9a-f]{64}$/);
 
     /*
-     * The verification snippet the README hands merchants, run against a real
-     * signature. If this assertion is edited, the README section has to change
+     * The verification snippet the admin's Webhooks page hands merchants
+     * (src/admin/WebhooksPage.tsx), run against a real signature. If this
+     * assertion is edited, that snippet and docs/webhooks.md have to change
      * with it — that is the point of testing the documented recipe rather than
      * the implementation's own inverse.
      */

@@ -164,7 +164,8 @@ Two more things that look like bugs and are not:
   `server/security.test.ts`. **This is not optional** — that file is what stops
   an unprotected endpoint from shipping.
 - New schema fields appear in both dialect files and both migration folders.
-- The README section for the area you touched is updated if behaviour changed.
+- The [docs site](https://belugajs.com) page for the area you touched is
+  updated if behaviour changed.
 - No `console.log` left behind except deliberate operator-facing lines that
   match the existing style (see `server/email.ts:114`).
 - The brief's frontmatter says `status: done` with a `completed` date and a

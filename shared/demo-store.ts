@@ -37,7 +37,7 @@ export const demoStore: Store = {
    * of untrue copy task 20 removed from here. Empty is what a new store
    * actually looks like, so the fallbacks are what the demo exercises: the
    * store name, no paragraph, and Shop everything. Settings is where the
-   * feature is discovered, and the README says so.
+   * feature is discovered, and the docs say so.
    */
   hero: defaultHero,
   // Prices are quoted without tax, which is the default a US-shaped demo
