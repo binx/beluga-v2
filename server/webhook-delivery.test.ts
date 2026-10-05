@@ -14,7 +14,7 @@ import type Stripe from "stripe";
  *
  * docs/tasks/14-outbound-webhooks.md's acceptance list is the spine of this
  * file: a signed order.paid after a payment, a signature that verifies with
- * the README's snippet, backoff and disabling on a failing endpoint, and a
+ * the documented snippet, backoff and disabling on a failing endpoint, and a
  * Stripe response time that a slow subscriber cannot touch.
  */
 process.env.WEBHOOK_ALLOW_INSECURE_TARGETS = "true";
@@ -201,8 +201,8 @@ describe("delivery", () => {
     const delivery = received[0]!;
 
     /*
-     * The verification recipe as the README states it, run verbatim: split the
-     * header, HMAC `${t}.${body}`, compare. A merchant already verifying Stripe
+     * The verification recipe as the admin's Webhooks page states it, run
+     * verbatim: split the header, HMAC `${t}.${body}`, compare. A merchant already verifying Stripe
      * signatures changes the header name and nothing else.
      */
     const signature = delivery.headers[SIGNATURE_HEADER] as string;

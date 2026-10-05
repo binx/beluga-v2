@@ -51,7 +51,7 @@ passes review, and is wrong.
 
 So every page is mostly *why it works this way and what breaks if you assume
 otherwise*, with the how-to compressed to the shortest correct version. The
-README is the tonal reference — it already does this.
+site itself is now the tonal reference; the README follows it.
 
 ### Confirmed: ship an AI-readable build of the docs
 
@@ -594,9 +594,12 @@ everything *looks* fine.
 **Resolved in this revision:** single audience (§1); AI-readable build confirmed
 (§1); shipping weight behaviour answered from source (§3.3).
 
+**Resolved since (2026-10-05):** how much of the README moves to the site — all
+of the per-feature depth. The README is now a front door in the site's framing
+(what you get, who it is for, quickstart, scripts, layout, the invariants in
+brief) and links to the site for everything else.
+
 **Deferred until the codebase is finished:**
-- How much of the README moves to the site vs. stays vs. is generated from a
-  shared source. The README is currently doing much of the site's job well.
 - Screenshot policy — how many, and where. The admin is still moving, and
   screenshots are the highest-maintenance content we can write.
 
