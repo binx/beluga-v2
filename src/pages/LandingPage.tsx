@@ -69,7 +69,7 @@ export function LandingPage() {
         {featured.length > 0 && (
           <section className={styles.section}>
             <header className={styles.sectionHead}>
-              <h2>Featured</h2>
+              <h2>Featured products</h2>
               <Link to="/shop" className={styles.more}>
                 View all →
               </Link>
